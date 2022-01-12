@@ -1,0 +1,10 @@
+
+{ 
+    "chromeWebSecurity": false, 
+    "defaultCommandTimeout":10000
+
+}
+
+
+
+

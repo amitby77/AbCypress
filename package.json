@@ -1,0 +1,21 @@
+{
+  "name": "abcypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stagging": "npx cypress run --headed --config baseUrl='https://www.google.com/'",
+    "production": "npx cypress run --headed --config baseUrl='http://www.yahoo.com/'"
+  },
+  "author": "AMit",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.23.0",
+    "cypress": "^9.1.1",
+    "cypress-file-upload": "^5.0.8"
+  },
+  "dependencies": {
+    "npx": "^10.2.2"
+  }
+}
