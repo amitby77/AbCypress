@@ -45,5 +45,4 @@ describe('verify the checkboxes',()=>{
     })
 
 
-
 })

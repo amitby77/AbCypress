@@ -56,6 +56,7 @@ describe('Verify the alrt in cypress',()=>{
         cy.on('window:alert',(str)=>{
             expect(str).to.equal('It’s that Easy!!  Well I think it is.....')
             //expect(str).should('have.class','modal-title')
-        })
+            cy.get('.modal-footer > .btn').click()
+    })
     })
 }) 

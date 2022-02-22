@@ -1,12 +1,13 @@
 describe('Iterate over the element',()=>{
 
 
-        it('validate title of skin care products',()=>{
+        it.only('validate title of skin care products',()=>{
             cy.visit('https://automationteststore.com/')
             cy.get('#categorymenu > nav > ul > li:nth-child(4) > a').click({force:true})
-            cy.get('.mt10').find('a').each(function(el){
+            cy.get('.mt10').find('a').each(function(el,index){
                 let expectedArray = ["Eyes","Face","Gift Ideas & Sets","Hands & Nails","Sun"]
-                expect(expectedArray.indexOf(el.text())).to.be.greaterThan(-1)    
+               // expect(expectedArray.indexOf(el.text())).to.be.greaterThan(-1)   
+                cy.wrap(el).should('contains.text',expectedArray[index])
             })
     })
 

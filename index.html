@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello word</h1>
+
+    <script>
+// console.log('welcome to my world')
+
+// function string(name){
+
+//     console.log('hello' + ' ' + name)
+
+// }
+
+let name ={
+
+    firstName:'Amit',
+    lastName: 'Byale',
+    Printfullname: function(city,current_city){
+        console.log(this.firstName + ' ' + this.lastName + ' ' + city + '  ' + current_city)
+    }
+}
+
+//console.log(name)
+
+//let name2 ={
+
+//firstName:'Ashish',
+//lastName: 'cool',
+//}
+
+//name.Printfullname.call(name2,'solapur','pune') // we call method of other object
+//name.Printfullname.apply(name2,['Nashik','Solapur'])  //  we can pass list of arguments in array
+
+//let dispalyLetter = name.Printfullname.bind() // we can use letter that method using different variable
+//console.log(dispalyLetter)
+
+
+// string('amit')
+// string('Ashish')
+
+
+
+let n = 5;
+let string = "";
+for (let i = 1; i <= n; i++) {
+  for (let j = 0; j < i; j++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
+
+
+    </script>
+</body>
+</html>

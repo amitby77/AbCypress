@@ -17,7 +17,7 @@ describe('test API request', () => {
         }).then((response) => {
 
             expect(response.status).to.eqls(201)   // verify the status
-            expect(response.duration).to.be.lessThan(1200)
+            expect(response.duration).to.be.lessThan(2200)
             expect(Number(response.body.id)).to.eqls(777)
         })
 
